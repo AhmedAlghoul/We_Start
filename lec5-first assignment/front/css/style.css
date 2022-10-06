@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #f4f4f4;
+    padding: 10px 0;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu ul li {
+    margin: 0 10px;
+}
+
+header a:hover {
+    color: #00f;
+    transition: all .3s ease;
+}
+
+main section {
+    padding-bottom: 60px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    text-align: center;
+}
+
+.ceo .image,
+.ceo .text {
+    width: 48%;
+
+}
+
+.ceo .wrapper {
+    align-items: center;
+}
+
+.services .card {
+    width: 32%
+}
+
+.services .card a {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    background: #a70777;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.contact .wrapper>div {
+    width: 48%;
+}
+
+form input,
+form textarea {
+    display: block;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    outline: none;
+    width: 100%;
+}
+form button{
+   padding : 10px 25px;
+   border: 0;
+   cursor: pointer;
+    background: #a70777;
+    color: #fff;
+    border-radius: 5px;
+}
+footer{
+    background: #2a2a2b;
+    text-align: center;
+    padding:18px;
+    color: #fff;
+}
+footer p{
+    margin: 0;
+}
+footer a{
+    color: #594bf3;
+}
+footer .fb{
+    color: #3b5998;
+}
+footer .tw{
+    color: #1da1f2;
+}
+
+footer .yt{
+    color: #ff0000;
+}
+
+
+/* to make it responsive */
+@media (max-width:767px){
+    .wrapper{
+        flex-direction: column;
+    }
+}
