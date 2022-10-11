@@ -58,6 +58,10 @@ style for dark mode theme and toggle button*/
 #theme {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .dark-mode-theme {
