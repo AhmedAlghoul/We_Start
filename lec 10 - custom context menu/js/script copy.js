@@ -18,7 +18,7 @@ scope.addEventListener("click", (event) => {
     }
 });
 
-
+//prevent menu from going out of bounds of the screen
 const normalizePozition = (mouseX, mouseY) => {
     // compute what is the mouse position relative to the container element (scope)
     let {
