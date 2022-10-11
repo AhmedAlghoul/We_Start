@@ -24,6 +24,8 @@ body {
     /* display: block; */
 }
 
+
+
 .context-menu .item {
     padding: 8px 10px;
     font-size: 15px;
@@ -34,4 +36,31 @@ body {
 
 .context-menu .item:hover {
     background: #343434;
+}
+
+/* 
+style for dark mode theme and toggle button*/
+#toggle-btn {
+    padding: 0.5em;
+    font-weight: 800;
+}
+
+#toggle-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dark-mode-toggle {
+    background: #000;
+    color: #fff;
+}
+
+#theme {
+    width: 100vw;
+    height: 100vh;
+}
+
+.dark-mode-theme {
+    background: #000;
+    color: #fff;
 }
