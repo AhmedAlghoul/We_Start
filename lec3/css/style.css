@@ -1,0 +1,23 @@
+h2 {
+    /* color: blue !important; */
+    color: tomato;
+}
+
+div {
+    /* background: red; (color name)*/
+    /* background: rgb(150, 33,89); */
+    /* background: rgba(150, 33, 89, 0.8); */
+    /* background: rgb(150 33 89 / 100%); browser new way to write rgba */
+    background: #456132;
+    height: 100px;
+    width: 100px;
+}
+
+/*
+1.color name
+2.color rgb
+3.color rgba
+4.color hexa
+*/
+
+/* قوة  css (inline/internal /exernal)1:32:-1:36:00 */
