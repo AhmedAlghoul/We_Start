@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comment;
+use App\Models\Post;
 use App\Models\Profile;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -29,5 +31,17 @@ class RelationController extends Controller
     //    ]);
 
         return view('one_to_one', compact('users'));
+    }
+
+    public function one_to_many()
+    {
+        $post= Post::with('comments.user')->withCount('comments')->find(1);
+        // dd($post->comments);
+
+        // $comment = Comment::find(1);
+        // dd($comment->user);
+
+        // return $post;
+        return view('one_to_many',compact('post'));
     }
 }
